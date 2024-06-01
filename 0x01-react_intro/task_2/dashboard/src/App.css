@@ -1,29 +1,39 @@
 :root {
-  --color-brand: #e01d3f;
+  --color-primary: #D73953;
 }
 
 .App-header {
   display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 0.2rem solid var(--color-primary);
+  color: var(--color-primary);
   align-items: center;
-  color: var(--color-brand);
-  font-size: 20px;
-  border-bottom: 3px solid var(--color-brand);
 }
 
 .App-header img {
+  height: 200px;
   width: 200px;
 }
 
 .App-body {
-  margin: 50px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .App-footer {
-  border-top: 3px solid var(--color-brand);
-  width: 100%;
-  display: flex;
-  justify-content: center;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  border-top: 0.2rem solid var(--color-primary);
+  text-align: center;
   font-style: italic;
+}
+
+.Login {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50rem;
+  flex-wrap: wrap;
 }
